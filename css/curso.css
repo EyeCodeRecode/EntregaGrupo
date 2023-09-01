@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #252525;
+    color: white;
+}
+
+li,a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 16px 24px;
+
+}
+.hamburguer{
+     display: none;
+}
+.barra{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin:5px auto;
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.nav-itens{
+    margin-left:15%;
+}
+
+.nav-link,.nav-logo{
+ color: rgb(255, 255, 255);
+ font-size: 25px;
+}
+.nav-link:hover,.nav-logo:hover{
+    color: #8BB0F2; 
+}
+
+.container-acessibilidade {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin-left: 60px;
+}
+
+.botao-acessibilidade {
+    background-color: #8BB0F2;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submenu-acessibilidade {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding-top: calc(50% - 50px); 
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.container-acessibilidade .submenu-acessibilidade.show {
+    display: block;
+    padding-top: 30vh;
+}
+
+.botao-opcao {
+    background-color: #8BB0F2;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.botao-fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #8BB0F2;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.submenu-acessibilidade {
+    background-color: #252525; 
+}
+#conteudo-site {
+    font-size: 16px; 
+}
+@media (max-width: 700px){
+
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 0px; 
+    flex-direction: column;
+    background-color: #252525;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-menu.active{
+    left: 0;
+}
+.nav-itens{
+    margin: 50px 0;
+}
+.hamburguer{
+    display: block;
+    cursor: pointer;
+}
+.hamburguer.active .barra:nth-child(2){
+    opacity: 0;
+}
+.hamburguer.active .barra:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburguer.active .barra:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+.sectionCursos{
+    padding: 2px;
+    text-align: center;
+}
+.divVejaCursos{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #344371;
+}
+.textoCurso{
+    padding: 2px;
+    font-size: 25px;
+}
+.explorarCursos{
+    padding: 2px;
+    height: 50px;
+}
+.sectionCard{
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    background-color: #B8C7F2;
+    padding-top: 10px;
+    
+}
+.divCartao{
+    padding: 2px;
+    background-color:#344371;
+    width: 280px;
+    border-radius: 20px;
+    
+}
+.divImgCartao{
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.divAvaliacao{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.divDescCurso{
+    font-size: 18px;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+}
+.exploreCategorias{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+    background-color: #344371;
+}
+.divTecnologias{
+    background-color: #344371;
+}
+.carrosel{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.itemCarrosel{
+    width:250px;
+    background-color: #B8C7F2;
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+}
+.tecnologia{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+.imgTecno{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    margin: auto;
+}
+.textoTecno{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: #344371;
+    width: 95%;
+    margin:auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.descTecno{
+    text-align: center;
+    background-color: #344371;
+    font-size: 18px; 
+    width: 95%;
+    margin:auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.modoClaroAzulEscuro{
+    background-color: #344371;
+    color: #252525; 
+}
+.modoClaroAzul{
+    background-color: #B8C7F2;
+    color: #252525;  
+}
+.modoClaro{
+    background-color: white;
+    color: #252525;   
+}
+.modoClaroA{
+    color: #252525; 
+}

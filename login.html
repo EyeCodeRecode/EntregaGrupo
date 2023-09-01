@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>EYE.CODE</title>
+</head>
+<body>
+    <!-- INICIO HEADER NAVBAR -->
+    <main class="main " id="conteudo-site">
+
+    
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">EYE.CODE
+            </a>
+            <div class="container-acessibilidade ">
+                <button class="botao-acessibilidade">Acessibilidade</button>
+                <ul class="submenu-acessibilidade ">
+                    <button class="botao-fechar">Fechar</button>
+                    <li><button class="botao-opcao botao-opcao-aumentar">Aumentar Fonte</button></li>
+                    <li><button class="botao-opcao botao-opcao-diminuir">Diminuir Fonte</button></li>
+                    <li><button class="botao-opcao botao-opcao-claro">Modo Claro</button></li>
+                    <li><button class="botao-opcao botao-opcao-escuro">Modo Escuro</button></li>
+                </ul>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-itens">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-itens">
+                    <a href="curso.html" class="nav-link">CURSOS</a>
+                </li>
+                <li class="nav-itens">
+                    <a href="perfil.html" class="nav-link">PERFIL</a>
+                </li>
+                <li class="nav-itens">
+                    <a href="login.html" class="nav-link">LOGIN</a>
+                </li>
+                                    
+            </ul>
+            <div class="hamburguer">
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- FIM HEADER NAVBAR -->
+    <div class="container">
+        <div class="content primeiro-conteudo">
+            <div class="primeira-coluna">
+                <h2 class="titulo titulo-primario">Bem-vindo de volta!</h2>
+                <p class="descricao descricao-primaria">Para entrar na conta</p>
+                <p class="descricao descricao-primaria">faça login com suas informações pessoais</p>
+                <button id="entrar" class="btn btn-primario">entrar</button>
+            </div>
+            <div class="segunda-coluna">
+                <h2 class="titulo titulo-segundo">criar conta</h2>
+                
+                <p class="descricao descricao-segunda">Use seu melhor e-mail para registro</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome Completo">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="CPF">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Numero de telefone">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <button class="btn btn-segundo">registrar</button>
+                </form>
+            </div>
+        </div>
+        <div class="content segundo-conteudo">
+            <div class="primeira-coluna">
+                <h2 class="titulo titulo-primario">Olá</h2>
+                <p class="descricao descricao-primaria">Caso não possua cadastro</p>
+                <p class="descricao descricao-primaria">insira seus dados e registre-se</p>
+                <button id="registrar" class="btn btn-primario">registrar</button>
+            </div>
+            <div class="segunda-coluna">
+                <h2 class="titulo titulo-segundo">entrar no desenvolvedor</h2>
+                <p class="descricao descricao-segunda">ou use sua conta de e-mail:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <a class="senha" href="#">esqueceu sua senha?</a>
+                    <button class="btn btn-segundo">entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+  </html>
+    <script  src="scriptLogin.js"></script>
+    <script src="scriptMenu.js">
+    </script>
+    
+</body>
+</html>
